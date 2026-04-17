@@ -1,0 +1,31 @@
+html { scroll-behavior: smooth; }
+
+.shadow-card {
+  box-shadow: 0 4px 24px rgba(44, 36, 32, 0.08);
+}
+
+.shadow-card-hover {
+  box-shadow: 0 8px 32px rgba(44, 36, 32, 0.12);
+}
+
+.gradient-gold {
+  background: linear-gradient(135deg, #C9A962 0%, #E8D9B5 50%, #C9A962 100%);
+}
+
+.text-gradient-gold {
+  background: linear-gradient(135deg, #C9A962 0%, #E8D9B5 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.mirror-effect {
+  background: linear-gradient(135deg, #E8D9B5 0%, #F5F0E6 25%, #E8D9B5 50%, #F5F0E6 75%, #E8D9B5 100%);
+  background-size: 200% 200%;
+  animation: mirror 3s ease infinite;
+}
+
+@keyframes mirror {
+  0%, 100% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+}
